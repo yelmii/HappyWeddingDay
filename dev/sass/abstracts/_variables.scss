@@ -1,0 +1,36 @@
+$color-primary-bg: #eeebfc;
+$color-primary: #6156c3;
+$color-primary-dark: #44248d;
+
+//GrayScale
+$color-gray50: #fafafa;
+$color-gray100: #f5f5f5;
+$color-gray200: #e5e5e5;
+$color-gray300: #d4d4d4;
+$color-gray400: #a3a3a3;
+$color-gray500: #737373;
+$color-gray600: #525252;
+$color-gray700: #404040;
+$color-gray800: #262626;
+$color-gray900: #171717;
+$color-gray950: #0a0a0a;
+
+$color-red-bg: #f8dad4;
+$color-red: #dc3545;
+$color-blueGreen: #17a2b8;
+$color-blue-bg: #c2daf5;
+$color-blue: #2882f0;
+$color-green: #28a745;
+$color-yellow: #ffff00;
+$color-gold: #ffc107;
+$color-modal-0: rgba(0, 0, 0, 0.1);
+$color-modal-1: rgba(0, 0, 0, 0.3);
+$color-modal-5: rgba(0, 0, 0, 0.5);
+
+@function SetBtnHover($IsDark) {
+    @if $IsDark {
+        @return inset 0 0 4px 50px rgb(255 255 255 / 10%);
+    } @else {
+        @return inset 0px 0px 4px 50px rgba(0 0 0 / 15%);
+    }
+}

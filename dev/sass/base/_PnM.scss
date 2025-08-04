@@ -1,0 +1,110 @@
+//padding
+.pl-18 {
+    padding-left: 18px;
+}
+.p-TB-20 {
+    padding: 20px 0;
+}
+.p-TB-40 {
+    padding: 40px 0;
+}
+.p-TB-70 {
+    padding: 70px 0;
+}
+.p-10-20 {
+    padding: 10px 20px;
+}
+
+.p-LR-16 {
+    padding: 0 16px;
+}
+.p-LR-20 {
+    padding: 0 20px;
+}
+
+//여백
+.m-TB-20 {
+    margin: 20px 0;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+@for $i from 1 through 10 {
+    @if $i < 10 {
+        //margin TBRL 1~9까지
+        .mb-#{$i} {
+            margin-bottom: $i * 1px;
+        }
+
+        .ml-#{$i} {
+            margin-left: $i * 1px;
+        }
+
+        .mr-#{$i} {
+            margin-right: $i * 1px;
+        }
+
+        .mt-#{$i} {
+            margin-top: $i * 1px;
+        }
+
+        //padding TBRL 1~9까지
+        .pb-#{$i} {
+            padding-bottom: $i * 1px;
+        }
+
+        .pl-#{$i} {
+            padding-left: $i * 1px;
+        }
+
+        .pr-#{$i} {
+            padding-right: $i * 1px;
+        }
+
+        .pt-#{$i} {
+            padding-top: $i * 1px;
+        }
+
+        .p-#{$i} {
+            padding: $i * 1px;
+        }
+    }
+    //margin TBRL 10 ~ 100까지 10단위
+    .mb-#{$i* 10} {
+        margin-bottom: $i * 10px;
+    }
+
+    .ml-#{$i* 10} {
+        margin-left: $i * 10px;
+    }
+
+    .mr-#{$i* 10} {
+        margin-right: $i * 10px;
+    }
+
+    .mt-#{$i* 10} {
+        margin-top: $i * 10px;
+    }
+
+    //padding TBRL 10 ~ 100까지 10단위
+    .pb-#{$i* 10} {
+        padding-bottom: $i * 10px;
+    }
+
+    .pl-#{$i* 10} {
+        padding-left: $i * 10px;
+    }
+
+    .pr-#{$i* 10} {
+        padding-right: $i * 10px;
+    }
+
+    .pt-#{$i* 10} {
+        padding-top: $i * 10px;
+    }
+    .p-#{$i* 10} {
+        padding: $i * 10px;
+    }
+}

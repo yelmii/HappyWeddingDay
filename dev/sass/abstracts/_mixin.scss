@@ -1,0 +1,58 @@
+@mixin afterIcon {
+    content: "";
+    display: block;
+    position: absolute;
+}
+@mixin centerX {
+    transform: translateX(-50%);
+    left: 50%;
+}
+@mixin centerY {
+    transform: translateY(-50%);
+    top: 50%;
+}
+@mixin centerXY {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+@mixin closeBtn($w, $h) {
+    display: flex;
+    justify-content: flex-end;
+    a {
+        @include widHig($w, $h);
+        position: relative;
+        display: block;
+        &:after,
+        &::before {
+            @include afterIcon;
+            @include widHig(2px, 100%);
+            @include centerXY;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background: $color-gray500;
+        }
+        &::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+}
+
+@mixin CustomColorScrollBar($width, $color) {
+    &::-webkit-scrollbar {
+        //width: 14px;
+        width: $width;
+        height: $width;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $color;
+        cursor: pointer;
+        //border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        //display: none;
+    }
+}

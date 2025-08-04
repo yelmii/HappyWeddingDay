@@ -1,0 +1,42 @@
+.flex {
+    display: flex;
+}
+.flex-jc-center {
+    display: flex;
+    justify-content: center;
+}
+.flex-jc-sb {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-ai-center {
+    display: flex;
+    align-items: center;
+}
+.flex-ai-start {
+    display: flex;
+    align-items: flex-start;
+}
+.flex-direc-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//gap
+@for $i from 1 through 10 {
+    .gap-#{$i} {
+        gap: ($i * 1px);
+    }
+    .gap-#{$i}0 {
+        gap: ($i * 10px);
+    }
+}
