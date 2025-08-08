@@ -1,0 +1,20 @@
+{
+	"liveSassCompile.enabled": false,
+	// 컴파일 경로 설정
+	"compile-hero.javascript-output-directory": "", // 현재 경로에 저장
+	"compile-hero.pug-output-directory": "",
+	"compile-hero.typescriptx-output-directory": "~/../../../begin/js",
+	"compile-hero.typescript-output-directory": "~/../../../begin/js",
+	"compile-hero.sass-output-directory": "~/../../../begin/css",
+	"compile-hero.jade-output-directory": "",
+	"compile-hero.html-output-directory": "",
+	"compile-hero.less-output-directory": "",
+
+	// 컴파일 언어 설정 (js와 html 컴파일은 끔)
+	"compile-hero.javascript-output-toggle": false,
+	"compile-hero.html-output-toggle": false,
+
+	// min 파일 생성 설정
+	"compile-hero.x-generate-minified-css": true,
+	"compile-hero.x-generate-minified-js": true
+}

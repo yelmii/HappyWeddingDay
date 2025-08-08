@@ -1,6 +1,4 @@
-$color-primary-bg: #eeebfc;
 $color-primary: #6156c3;
-$color-primary-dark: #44248d;
 
 //GrayScale
 $color-gray50: #fafafa;
@@ -28,9 +26,9 @@ $color-modal-1: rgba(0, 0, 0, 0.3);
 $color-modal-5: rgba(0, 0, 0, 0.5);
 
 @function SetBtnHover($IsDark) {
-    @if $IsDark {
-        @return inset 0 0 4px 50px rgb(255 255 255 / 10%);
-    } @else {
-        @return inset 0px 0px 4px 50px rgba(0 0 0 / 15%);
-    }
+	@if $IsDark {
+		@return inset 0 0 4px 50px rgb(255 255 255 / 10%);
+	} @else {
+		@return inset 0px 0px 4px 50px rgba(0 0 0 / 15%);
+	}
 }

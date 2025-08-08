@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>김성호 최예림 우리 결혼합니다</title>
+		<link rel="stylesheet" href="./begin/css/Common.min.css" />
 	</head>
 	<body>
 		<div class="wrap">
@@ -21,7 +22,7 @@
 			</section>
 			<!-- 메인이미지 S -->
 			<!-- 초대글 S -->
-			<section class="invitation-wrap">
+			<section class="section invitation-wrap">
 				<h2 class="section-title">
 					<span class="sub">INVITATION</span>
 					소중한 분들을 초대합니다
@@ -52,7 +53,7 @@
 			</section>
 			<!-- 초대글 E -->
 			<!-- 날짜안내 S -->
-			<section class="date-wrap">
+			<section class="section date-wrap">
 				<span class="">2025. 12. 07</span><br />
 				일요일 오전 11시<br />
 				<table class="calendar">
@@ -133,7 +134,7 @@
 			</section>
 			<!-- 날짜안내 E -->
 			<!-- 오시는길 S -->
-			<section class="location-wrap">
+			<section class="section location-wrap">
 				<h2 class="section-title">
 					<span class="sub">LOCATION</span>
 					오시는 길
@@ -193,7 +194,8 @@
 				</div>
 			</section>
 			<!-- 오시는길 E -->
-			<section class="account-wrap">
+			<!-- 계좌 S -->
+			<section class="section account-wrap">
 				<h2 class="section-title">
 					<span class="sub">ACCOUNT</span>
 					마음 전하실 곳
@@ -246,9 +248,29 @@
 					</li>
 				</ul>
 			</section>
+			<!-- 계좌 E -->
+			<!-- 갤러리 S -->
+			<section class="section gallery-wrap">
+				<h2 class="section-title">
+					<span class="sub">GALLERY</span>
+					우리의 순간들
+				</h2>
+				<div>
+					<a href="javascript:showPhoto">
+						<img src="./asset/images/gallery/3858.JPEG" alt="웨딩사진1" />
+					</a>
+				</div>
+			</section>
+			<!-- 갤러리 E -->
 		</div>
+		<!-- 모달배경 S -->
+		<div id="BgModal" class="bg-modal">
+			<a href="javascript:ToggleClass('on', 'ImgWrap')"></a>
+		</div>
+		<!-- 모달배경 E -->
+		<div id="ImgWrap" class="img-modal-wrap"></div>
 		<!-- 연락처 모달 S -->
-		<div id="TelWrap" class="tel-wrap">
+		<div id="TelWrap" class="tel-modal-wrap">
 			<!-- 신랑가족 연락처 S -->
 			<div>
 				<div class="mb-10">

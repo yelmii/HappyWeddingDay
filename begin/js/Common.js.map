@@ -1,0 +1,1 @@
+{"version":3,"sources":["Common.ts"],"names":[],"mappings":"AAAA,SAAS,IAAI;IACZ,OAAO,CAAC,GAAG,CAAC,OAAO,CAAC,CAAC;AACtB,CAAC","file":"Common.js","sourcesContent":["function test() {\r\n\tconsole.log(\"hello\");\r\n}\r\n"]}

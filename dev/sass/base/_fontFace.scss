@@ -1,0 +1,29 @@
+//폰트페이스
+//프리텐다드
+@font-face {
+	font-family: "Pretendard";
+	src: url(/asset/font/Pretendard-Regular.subset.woff) format("woff"), url(/asset/font/Pretendard-Regular.subset.woff2) format("woff2");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Pretendard";
+	src: url(/asset/font/Pretendard-SemiBold.subset.woff) format("woff"), url(/asset/font/Pretendard-SemiBold.subset.woff2) format("woff2");
+	font-weight: 600;
+}
+//영문필기체
+@font-face {
+	font-family: "TuesdayNight";
+	src: url(/asset/font/TuesdayNight-Regular.otf) format("OpenType");
+	font-weight: 400;
+}
+//고운바탕
+@font-face {
+	font-family: "GowunBatang";
+	src: url(/asset/font/GowunBatang-Regular.ttf) format("TrueType");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "GowunBatang";
+	src: url(/asset/font/GowunBatang-Bold.ttf) format("TrueType");
+	font-weight: 600;
+}
