@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as variables;
+p {
+	line-height: 180%;
+}
+.f-i {
+	font-style: italic;
+}
+.f-size-S {
+	font-size: 0.7rem;
+}
+.f-size-L {
+	font-size: 1.2rem;
+}
+.f-size-XL {
+	font-size: 1.8rem;
+}
+.color-gray600 {
+	color: variables.$color-gray600;
+}
+
+.color-primary {
+	color: variables.$color-primary;
+}
+
+.section-title {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	font-weight: 600;
+	color: variables.$color-primary;
+	margin-bottom: 2rem;
+	.sub {
+		font-size: 0.8rem;
+		letter-spacing: 0.3rem;
+	}
+}
+.main-title {
+	font-family: "TuesdayNight";
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+}

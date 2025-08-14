@@ -9,12 +9,13 @@
 
 body {
 	width: 100%;
-	color: variables.$color-gray950;
+	color: variables.$font-color-static;
 	font-family: "GowunBatang";
 	font-weight: 400;
 	text-align: center;
 	font-size: 14px;
-	background: rgb(255, 253, 232);
+	//background: rgb(255, 253, 232);
+	background: variables.$color-main-bg;
 }
 
 img {
@@ -24,9 +25,11 @@ img {
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: variables.$font-color-static;
 }
-
+i {
+	font-style: normal;
+}
 ul,
 li,
 ol {
@@ -35,10 +38,6 @@ ol {
 
 address {
 	font-style: normal;
-}
-
-p {
-	font-size: 1rem;
 }
 
 h1,

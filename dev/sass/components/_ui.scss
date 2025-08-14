@@ -1,0 +1,39 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixin" as mixin;
+.btn-center {
+	display: flex;
+	gap: 4px;
+	align-items: center;
+	justify-content: center;
+}
+.btn {
+	background: #fff;
+	border: none;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	min-width: 6rem;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	i {
+		font-size: 0.7rem;
+		color: variables.$color-gray500;
+	}
+}
+
+.dot-list > li {
+	margin-bottom: 0.5rem;
+	padding-left: 1rem;
+	position: relative;
+	&:after {
+		@include mixin.afterIcon;
+		top: 0.4rem;
+		left: 0;
+		width: 0.5rem;
+		height: 0.5rem;
+		border-radius: 50%;
+		background: variables.$color-gray400;
+	}
+}
