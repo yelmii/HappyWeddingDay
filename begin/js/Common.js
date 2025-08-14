@@ -1,5 +1,4 @@
 function test() {
     console.log("hello");
+    console.log("hello");
 }
-
-//# sourceMappingURL=Common.js.map

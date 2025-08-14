@@ -1,0 +1,29 @@
+@use "../abstracts/mixin" as mixin;
+.main-wrap{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .main-title{
+        font-family: "TuesdayNight";
+        color: #fff;
+        position: absolute;
+        bottom: 80px;
+        @include mixin.centerX;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+    .date{
+        width: 90%;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 5rem;
+        color: #fff;
+        gap: 0.5rem;
+        @include mixin.centerX;
+    }
+}
