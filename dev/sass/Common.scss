@@ -2,10 +2,12 @@
 @use "base/flex";
 @use "base/PnM";
 @use "base/WnH";
+@use "base/fontStyle";
 @use "base/reset";
 
-@use "components/typo";
+@use "components/ui";
 @use "components/invitation";
 @use "components/main";
+@use "components/modal";
 
 @use "layout/layout";

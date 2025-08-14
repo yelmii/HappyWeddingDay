@@ -1,372 +1,360 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>김성호 최예림 우리 결혼합니다</title>
-        <link rel="stylesheet" href="./begin/css/Common.min.css" />
-        <script type="text/javascript" src="./begin/js/Common.js"></script>
-    </head>
-    <body>
-        <div class="wrap">
-            <!-- 메인이미지 S -->
-            <section class="main-wrap">
-                <h2 class="main-title"><img src="/asset/images/main-title.svg"></h2>
-                <div class="date">
-                    <span>2025. 12. 07</span>
-                    <span>Sun 11:00</span>
-                    <span>강동KDW</span>
-                </div>
-                <img src="./asset/images/CMZH3100.jpg" alt="웨딩화보" title="웨딩화보" />
-            </section>
-            <!-- 메인이미지 S -->
-            <!-- 초대글 S -->
-            <section class="section invitation-wrap">
-                <h2 class="section-title">
-                    <span class="sub">INVITATION</span>
-                    소중한 분들을 초대합니다
-                </h2>
-                <p class="f-i">
-                    봄의 그대는 벚꽃이었고<br />
-                    여름의 그대는 바람이었으며<br />
-                    가을의 그대는 하늘이었고<br />
-                    겨울의 그대는 하얀 눈이었다.<br />
-                    <br />
-                    그대는 언제나<br />
-                    행복 그 자체였다.<br />
-                    &lt;사계, 강현욱&gt;
-                </p>
-                <p>
-                    둘이 함께 있어야 하나가 되는 것들이 있습니다.<br />
-                    신발, 양말, 젓가락, 카메라와 필름... 그리고 저희 둘.<br />
-                    이제는 땅콩처럼 한 집에서 붙어 살기로 했습니다.<br />
-                    깨가 쏟아지는 결혼식에 여러분을 초대합니다!
-                </p>
-                <p>
-                    김홍기&middot;오선미<span class="f-size-09 color-gray">의 장남</span> 김성호 <br />
-                    <span class="mark">최영석</span>&middot;유진덕<span class="f-size-09 color-gray">의 장녀</span>
-                    최예림
-                </p>
-                <div class="btn-center">
-                    <button type="button" onclick="showTelNumber()" class="btn">연락하기</button>
-                </div>
-            </section>
-            <!-- 초대글 E -->
-            <!-- 날짜안내 S -->
-            <section class="section date-wrap">
-                <span class="">2025. 12. 07</span><br />
-                일요일 오전 11시<br />
-                <table class="calendar">
-                    <tr>
-                        <th class="sun">일</th>
-                        <th>월</th>
-                        <th>화</th>
-                        <th>수</th>
-                        <th>목</th>
-                        <th>금</th>
-                        <th class="sat">토</th>
-                    </tr>
-                    <tr>
-                        <th class="sun"></th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th class="sat">6</th>
-                    </tr>
-                    <tr>
-                        <th class="sun active">7</th>
-                        <th>8</th>
-                        <th>9</th>
-                        <th>10</th>
-                        <th>11</th>
-                        <th>12</th>
-                        <th class="sat">13</th>
-                    </tr>
-                    <tr>
-                        <th class="sun">14</th>
-                        <th>15</th>
-                        <th>16</th>
-                        <th>17</th>
-                        <th>18</th>
-                        <th>19</th>
-                        <th class="sat">20</th>
-                    </tr>
-                    <tr>
-                        <th class="sun">21</th>
-                        <th>22</th>
-                        <th>23</th>
-                        <th>24</th>
-                        <th>25</th>
-                        <th>26</th>
-                        <th class="sat">27</th>
-                    </tr>
-                    <tr>
-                        <th class="sun">28</th>
-                        <th>29</th>
-                        <th>30</th>
-                        <th>31</th>
-                        <th></th>
-                        <th></th>
-                        <th class="sat"></th>
-                    </tr>
-                </table>
-                <div class="gap-10">
-                    <div>
-                        <div class="title">DAYS</div>
-                        <div id="Day" class="count-num">??</div>
-                    </div>
-                    <div>
-                        <div class="title">HOUR</div>
-                        <div id="Hour" class="count-num">??</div>
-                    </div>
-                    <div>
-                        <div class="title">MIN</div>
-                        <div id="Min" class="count-num">??</div>
-                    </div>
-                    <div>
-                        <div class="title">SEC</div>
-                        <div id="Sec" class="count-num">??</div>
-                    </div>
-                </div>
-                <div>
-                    성호, 예림의 결혼식이
-                    <span id="Day_2" class="color-active">??</span>일 남았습니다.
-                </div>
-            </section>
-            <!-- 날짜안내 E -->
-            <!-- 오시는길 S -->
-            <section class="section location-wrap">
-                <h2 class="section-title">
-                    <span class="sub">LOCATION</span>
-                    오시는 길
-                </h2>
-                <div class="fs-L">강동웨딩 KDW 마이더스홀</div>
-                <div class="color-gray">서울 강동구 천호대로 1102</div>
-                <div class="color-gray">Tel. 02-477-7700</div>
-                <div class="kakao-map"></div>
-                <div class="location-list">
-                    <!-- 자가용 S -->
-                    <div>
-                        <div>자가용</div>
-                        <ul>
-                            <li>
-                                주소 : 서울 강동구 천호대로 1102 <br />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>김성호 최예림 우리 결혼합니다</title>
+		<link rel="stylesheet" href="./begin/css/Common.min.css" />
+		<script src="https://kit.fontawesome.com/b680fb12c3.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./begin/js/Common.js"></script>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- 메인이미지 S -->
+			<section class="main-wrap">
+				<h2 class="main-title">Always be with you</h2>
+				<div class="date">
+					<span>2025. 12. 07</span>
+					<span>Sun 11:00</span>
+					<span>강동 KDW</span>
+				</div>
+				<img src="./asset/images/main.jpg" alt="웨딩화보" title="웨딩화보" />
+			</section>
+			<!-- 메인이미지 S -->
+			<!-- 초대글 S -->
+			<section class="section invitation-wrap">
+				<h2 class="section-title">
+					<span class="sub">INVITATION</span>
+					소중한 분들을 초대합니다
+				</h2>
+				<p class="f-i mb-50 color-gray600">
+					봄의 그대는 벚꽃이었고<br />
+					여름의 그대는 바람이었으며<br />
+					가을의 그대는 하늘이었고<br />
+					겨울의 그대는 하얀 눈이었다.<br />
+					<br />
+					그대는 언제나<br />
+					행복 그 자체였다.<br />
+					&lt;사계, 강현욱&gt;
+				</p>
+				<p class="mb-50">
+					둘이 함께 있어야 하나가 되는 것들이 있습니다.<br />
+					신발, 양말, 젓가락... 그리고 저희 둘.<br />
+					이제는 땅콩처럼 한 집에서 붙어 살기로 했습니다.<br />
+					깨가 쏟아지는 결혼식에 여러분을 초대합니다!
+				</p>
+				<p class="mb-20">
+					김홍기&middot;오선미<span class="f-size-S color-gray600">의 장남</span> 김성호 <br />
+					<span class="mark">최영석</span>&middot;유진덕<span class="f-size-S color-gray600">의 장녀</span>
+					최예림
+				</p>
+				<div class="btn-center">
+					<button type="button" onclick="showTelNumber()" class="btn">
+						<i class="fa-solid fa-phone awesome"></i>
+						연락하기
+					</button>
+				</div>
+			</section>
+			<!-- 초대글 E -->
+			<!-- 날짜안내 S -->
+			<section class="section date-wrap">
+				<p class="f-size-L">2025. 12. 07</p>
+				일요일 오전 11시
+				<table class="calendar">
+					<tr>
+						<th class="sun">일</th>
+						<th>월</th>
+						<th>화</th>
+						<th>수</th>
+						<th>목</th>
+						<th>금</th>
+						<th class="sat">토</th>
+					</tr>
+					<tr>
+						<th class="sun"></th>
+						<th>1</th>
+						<th>2</th>
+						<th>3</th>
+						<th>4</th>
+						<th>5</th>
+						<th class="sat">6</th>
+					</tr>
+					<tr>
+						<th class="sun active">7</th>
+						<th>8</th>
+						<th>9</th>
+						<th>10</th>
+						<th>11</th>
+						<th>12</th>
+						<th class="sat">13</th>
+					</tr>
+					<tr>
+						<th class="sun">14</th>
+						<th>15</th>
+						<th>16</th>
+						<th>17</th>
+						<th>18</th>
+						<th>19</th>
+						<th class="sat">20</th>
+					</tr>
+					<tr>
+						<th class="sun">21</th>
+						<th>22</th>
+						<th>23</th>
+						<th>24</th>
+						<th>25</th>
+						<th>26</th>
+						<th class="sat">27</th>
+					</tr>
+					<tr>
+						<th class="sun">28</th>
+						<th>29</th>
+						<th>30</th>
+						<th>31</th>
+						<th></th>
+						<th></th>
+						<th class="sat"></th>
+					</tr>
+				</table>
+				<div class="gap-20 flex-jc-center time-wrap mb-10">
+					<div>
+						<div class="title">DAYS</div>
+						<div id="Day" class="count-num">??</div>
+					</div>
+					<div>
+						<div class="title">HOUR</div>
+						<div id="Hour" class="count-num">??</div>
+					</div>
+					<div>
+						<div class="title">MIN</div>
+						<div id="Min" class="count-num">??</div>
+					</div>
+					<div>
+						<div class="title">SEC</div>
+						<div id="Sec" class="count-num">??</div>
+					</div>
+				</div>
+				<div>
+					성호, 예림의 결혼식이
+					<span id="Day_2" class="color-primary">??</span>일 남았습니다.
+				</div>
+			</section>
+			<!-- 날짜안내 E -->
+			<!-- 오시는길 S -->
+			<section class="section location-wrap">
+				<h2 class="section-title">
+					<span class="sub">LOCATION</span>
+					오시는 길
+				</h2>
+				<div class="f-size-L mb-4">KDW웨딩 마이더스홀</div>
+				<div class="mb-10">서울 강동구 천호대로 1102</div>
+				<div class="color-gray600 mb-20">Tel. 02-477-7700</div>
+				<!-- * 카카오맵 - 지도퍼가기 -->
+				<!-- 1. 지도 노드 -->
+				<div id="daumRoughmapContainer1755155888219" class="root_daum_roughmap root_daum_roughmap_landing map"></div>
 
-                                원하시는 앱을 선택하시면 길안내가 시작됩니다.
-                                <div class="gap-10">
-                                    <a href="" target="_blank" class="btn" title="네이버지도" alt="네이버지도"
-                                        >네이버지도</a
-                                    >
-                                    <a href="" target="_blank" class="btn" title="티맵" alt="티맵">티맵</a>
-                                    <a href="" target="_blank" class="btn" title="카카오네비" alt="카카오네비"
-                                        >카카오네비</a
-                                    >
-                                </div>
-                            </li>
-                            <li>
-                                주차장 안내 <br />
-                                <ul>
-                                    <li>건물 내 지하 1~3층</li>
-                                    <li>옥외 주차장 및 지하철 환승 주차장</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 자가용 E -->
-                    <!-- 지하철 S -->
-                    <div>
-                        <div>지하철</div>
-                        <ul>
-                            <li>
-                                5호선 강동역<br />
-                                3번 출구 도보 1분
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- 지하철 E -->
-                    <!-- 버스 S -->
-                    <div>
-                        <div>버스 : 강동역 하차</div>
-                        <ul>
-                            <li>간선 : 130, 341, 342, 370</li>
-                            <li>지선 : 3214, 3316</li>
-                            <li>직행 : 1113, 1113-1</li>
-                            <li>일반 : 1-4, 23, 30-3, 112-1, 112-5</li>
-                            <li>공항 : 6300 (길동사거리 하차)</li>
-                        </ul>
-                    </div>
-                    <!-- 버스 E -->
-                </div>
-            </section>
-            <!-- 오시는길 E -->
-            <!-- 계좌 S -->
-            <section class="section account-wrap">
-                <h2 class="section-title">
-                    <span class="sub">ACCOUNT</span>
-                    마음 전하실 곳
-                </h2>
-                <p>
-                    참석이 어려우신 분들을 위해<br />
-                    계좌번호를 기재하였습니다.<br />
-                    너그러운 마음으로 양해 부탁드립니다.
-                </p>
-                <ul>
-                    <li>
-                        <a href="#none" class="btn-toggle">신랑측</a>
-                        <ul>
-                            <li>
-                                <a href="javascript:copyText(1)">
-                                    신랑 김성호 :
-                                    <input type="text" id="Bank_1" value="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:copyText(2)">
-                                    아버지 김홍기 :
-                                    <input type="text" id="Bank_2" value="" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:copyText(3)">
-                                    어머니 오선미 :
-                                    <input type="text" id="Bank_3" value="" />
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#none" class="btn-toggle">신부측</a>
-                        <ul>
-                            <li>
-                                <a href="javascript:copyText(4)">
-                                    신부 최예림 : 국민은행 417801-04-022467
-                                    <input type="text" id="Bank_4" value="41780104022467 국민" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:copyText(5)">
-                                    어머니 유진덕 :
-                                    <input type="text" id="Bank_5" value=" 국민" />
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <!-- 계좌 E -->
-            <!-- 갤러리 S -->
-            <section class="section gallery-wrap">
-                <h2 class="section-title">
-                    <span class="sub">GALLERY</span>
-                    우리의 순간들
-                </h2>
-                <div>
-                    <a href="javascript:showPhoto">
-                        <img src="./asset/images/gallery/3858.JPEG" alt="웨딩사진1" />
-                    </a>
-                </div>
-            </section>
-            <!-- 갤러리 E -->
-        </div>
-        <!-- 모달배경 S -->
-        <div id="BgModal" class="bg-modal">
-            <a href="javascript:ToggleClass('on', 'ImgWrap')"></a>
-        </div>
-        <!-- 모달배경 E -->
-        <div id="ImgWrap" class="img-modal-wrap"></div>
-        <!-- 연락처 모달 S -->
-        <div id="TelWrap" class="tel-modal-wrap">
-            <!-- 신랑가족 연락처 S -->
-            <div>
-                <div class="mb-10">
-                    신랑 김성호
-                    <div class="gap-10 flex-center">
-                        <a href="tel:010-4626-6889" class="btn-tel" alt="김성호 전화하기" title="김성호 전화하기"
-                            >010-4626-6889</a
-                        >
-                        <a href="sms:010-4626-6889" class="btn-sms" alt="김성호 문자하기" title="김성호 문자하기"
-                            >010-4626-6889</a
-                        >
-                        <a
-                            href="https://qr.kakao.com/talk/R100fFZwSJWlXJ.HdL2bAmgaLmI-"
-                            target="_blank"
-                            class="btn-kakao"
-                            alt="김성호 카톡하기"
-                            title="김성호 카톡하기"
-                            >카카오톡 프로필</a
-                        >
-                    </div>
-                </div>
-                <div class="mb-10">
-                    신랑 아버지 김홍기
-                    <div class="gap-10 flex-center">
-                        <a href="tel:010-8882-6889" class="btn-tel" alt="김홍기 전화하기" title="김홍기 전화하기"
-                            >010-8882-6889</a
-                        >
-                        <a href="sms:010-8882-6889" class="btn-sms" alt="김홍기 문자하기" title="김홍기 문자하기"
-                            >010-8882-6889</a
-                        >
-                        <a href="" target="_blank" class="btn-kakao" alt="김홍기 카톡하기" title="김홍기 카톡하기"
-                            >카카오톡 프로필</a
-                        >
-                    </div>
-                </div>
-                <div class="mb-10">
-                    신랑 어머니 오선미
-                    <div class="gap-10 flex-center">
-                        <a href="tel:010-5638-7889" class="btn-tel" alt="오선미 전화하기" title="오선미 전화하기"
-                            >010-5638-7889</a
-                        >
-                        <a href="sms:010-5638-7889" class="btn-sms" alt="오선미 문자하기" title="오선미 문자하기"
-                            >010-5638-7889</a
-                        >
-                        <a href="" target="_blank" class="btn-kakao" alt="오선미 카톡하기" title="오선미 카톡하기"
-                            >카카오톡 프로필</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <!-- 신랑가족연락처 E -->
-            <!-- 신부가족연락처 S -->
-            <div>
-                <div class="mb-10">
-                    신부 최예림
-                    <div class="gap-10 flex-center">
-                        <a href="tel:010-3901-3008" class="btn-tel" alt="최예림 전화하기" title="최예림 전화하기"
-                            >010-3901-3008</a
-                        >
-                        <a href="sms:010-3901-3008" class="btn-sms" alt="최예림 문자하기" title="최예림 문자하기"
-                            >010-3901-3008</a
-                        >
-                        <a
-                            href="https://qr.kakao.com/talk/xw6LUFCqVJiDA2x8HhzWJuxFhKg-"
-                            target="_blank"
-                            class="btn-kakao"
-                            alt="최예림 카톡하기"
-                            title="최예림 카톡하기"
-                            >카카오톡 프로필</a
-                        >
-                    </div>
-                </div>
-                <div class="mb-10">
-                    신부 어머니 유진덕
-                    <div class="gap-10 flex-center">
-                        <a href="tel:010-2900-5699" class="btn-tel" alt="유진덕 전화하기" title="유진덕 전화하기"
-                            >010-2900-5699</a
-                        >
-                        <a href="sms:010-2900-5699" class="btn-sms" alt="유진덕 문자하기" title="유진덕 문자하기"
-                            >010-2900-5699</a
-                        >
-                        <a href="" target="_blank" class="btn-kakao" alt="유진덕 카톡하기" title="유진덕 카톡하기"
-                            >카카오톡 프로필</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <!-- 신부가족연락처 E -->
-        </div>
-        <!-- 연락처 모달 S -->
-    </body>
+				<!--
+					2. 설치 스크립트
+					* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+				-->
+				<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+				<!-- 3. 실행 스크립트 -->
+				<script charset="UTF-8">
+					new daum.roughmap.Lander({
+						timestamp: "1755155888219",
+						key: "6yiu7uk77ea",
+					}).render();
+				</script>
+
+				<div class="location-list">
+					<!-- 자가용 S -->
+					<div class="mb-30">
+						<div class="title">자가용</div>
+						<ul class="dot-list">
+							<li>
+								<div class="mb-4">주소 : 서울 강동구 천호대로 1102</div>
+								<div class="gap-10">
+									<a href="https://naver.me/FPn5kMTA" target="_blank" class="btn width-100" title="네이버지도" alt="네이버지도">네이버지도</a>
+									<a href="" target="_blank" class="btn width-100" title="티맵" alt="티맵">티맵</a>
+									<a href="https://map.kakao.com/link/search/카카오" target="_blank" class="btn width-100" title="카카오네비" alt="카카오네비">카카오네비</a>
+								</div>
+							</li>
+							<li>
+								주차장 안내 <br />
+								<ul>
+									<li>건물 내 지하 1~3층</li>
+									<li>옥외 주차장 및 지하철 환승 주차장</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- 자가용 E -->
+					<!-- 지하철 S -->
+					<div class="mb-30">
+						<div class="title">지하철</div>
+						<ul class="dot-list">
+							<li class="type-1">
+								5호선 강동역
+								<ul>
+									<li>3번 출구 도보 1분</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- 지하철 E -->
+					<!-- 버스 S -->
+					<div class="mb-30">
+						<div class="title">버스 : 강동역 하차</div>
+						<ul class="dot-list">
+							<li class="type-2">간선 : 130, 341, 342, 370</li>
+							<li class="type-3">지선 : 3214, 3316</li>
+							<li class="type-4">직행 : 1113, 1113-1</li>
+							<li class="type-5">일반 : 1-4, 23, 30-3, 112-1, 112-5</li>
+							<li class="type-6">공항 : 6300 (길동사거리 하차)</li>
+						</ul>
+					</div>
+					<!-- 버스 E -->
+				</div>
+			</section>
+			<!-- 오시는길 E -->
+			<!-- 계좌 S -->
+			<section class="section account-wrap">
+				<h2 class="section-title">
+					<span class="sub">ACCOUNT</span>
+					마음 전하실 곳
+				</h2>
+				<p>
+					참석이 어려우신 분들을 위해<br />
+					계좌번호를 기재하였습니다.<br />
+					너그러운 마음으로 양해 부탁드립니다.
+				</p>
+				<ul>
+					<li>
+						<a href="#none" class="btn-toggle">신랑측</a>
+						<ul>
+							<li>
+								<a href="javascript:copyText(1)">
+									신랑 김성호 :
+									<input type="text" id="Bank_1" value="" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:copyText(2)">
+									아버지 김홍기 :
+									<input type="text" id="Bank_2" value="" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:copyText(3)">
+									어머니 오선미 :
+									<input type="text" id="Bank_3" value="" />
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#none" class="btn-toggle">신부측</a>
+						<ul>
+							<li>
+								<a href="javascript:copyText(4)">
+									신부 최예림 : 국민은행 417801-04-022467
+									<input type="text" id="Bank_4" value="41780104022467 국민" />
+								</a>
+							</li>
+							<li>
+								<a href="javascript:copyText(5)">
+									어머니 유진덕 :
+									<input type="text" id="Bank_5" value=" 국민" />
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<!-- 계좌 E -->
+			<!-- 갤러리 S -->
+			<section class="section gallery-wrap">
+				<h2 class="section-title">
+					<span class="sub">GALLERY</span>
+					우리의 순간들
+				</h2>
+				<div>
+					<a href="javascript:showPhoto">
+						<img src="./asset/images/gallery/3858.JPEG" alt="웨딩사진1" />
+					</a>
+				</div>
+			</section>
+			<!-- 갤러리 E -->
+		</div>
+		<!-- 모달배경 S -->
+		<div id="BgModal" class="bg-modal">
+			<a href="javascript:ToggleClass('on', 'ImgWrap')"></a>
+		</div>
+		<!-- 모달배경 E -->
+		<div id="ImgWrap" class="img-modal-wrap"></div>
+		<!-- 연락처 모달 S -->
+		<div id="TelWrap" class="tel-modal-wrap">
+			<!-- 신랑가족 연락처 S -->
+			<div>
+				<div class="mb-10">
+					신랑 김성호
+					<div class="gap-10 flex-center">
+						<a href="tel:010-4626-6889" class="btn-tel" alt="김성호 전화하기" title="김성호 전화하기">010-4626-6889</a>
+						<a href="sms:010-4626-6889" class="btn-sms" alt="김성호 문자하기" title="김성호 문자하기">010-4626-6889</a>
+						<a href="https://qr.kakao.com/talk/R100fFZwSJWlXJ.HdL2bAmgaLmI-" target="_blank" class="btn-kakao" alt="김성호 카톡하기" title="김성호 카톡하기">카카오톡 프로필</a>
+					</div>
+				</div>
+				<div class="mb-10">
+					신랑 아버지 김홍기
+					<div class="gap-10 flex-center">
+						<a href="tel:010-8882-6889" class="btn-tel" alt="김홍기 전화하기" title="김홍기 전화하기">010-8882-6889</a>
+						<a href="sms:010-8882-6889" class="btn-sms" alt="김홍기 문자하기" title="김홍기 문자하기">010-8882-6889</a>
+						<a href="" target="_blank" class="btn-kakao" alt="김홍기 카톡하기" title="김홍기 카톡하기">카카오톡 프로필</a>
+					</div>
+				</div>
+				<div class="mb-10">
+					신랑 어머니 오선미
+					<div class="gap-10 flex-center">
+						<a href="tel:010-5638-7889" class="btn-tel" alt="오선미 전화하기" title="오선미 전화하기">010-5638-7889</a>
+						<a href="sms:010-5638-7889" class="btn-sms" alt="오선미 문자하기" title="오선미 문자하기">010-5638-7889</a>
+						<a href="" target="_blank" class="btn-kakao" alt="오선미 카톡하기" title="오선미 카톡하기">카카오톡 프로필</a>
+					</div>
+				</div>
+			</div>
+			<!-- 신랑가족연락처 E -->
+			<!-- 신부가족연락처 S -->
+			<div>
+				<div class="mb-10">
+					신부 최예림
+					<div class="gap-10 flex-center">
+						<a href="tel:010-3901-3008" class="btn-tel" alt="최예림 전화하기" title="최예림 전화하기">010-3901-3008</a>
+						<a href="sms:010-3901-3008" class="btn-sms" alt="최예림 문자하기" title="최예림 문자하기">010-3901-3008</a>
+						<a href="https://qr.kakao.com/talk/xw6LUFCqVJiDA2x8HhzWJuxFhKg-" target="_blank" class="btn-kakao" alt="최예림 카톡하기" title="최예림 카톡하기">카카오톡 프로필</a>
+					</div>
+				</div>
+				<div class="mb-10">
+					신부 어머니 유진덕
+					<div class="gap-10 flex-center">
+						<a href="tel:010-2900-5699" class="btn-tel" alt="유진덕 전화하기" title="유진덕 전화하기">010-2900-5699</a>
+						<a href="sms:010-2900-5699" class="btn-sms" alt="유진덕 문자하기" title="유진덕 문자하기">010-2900-5699</a>
+						<a href="" target="_blank" class="btn-kakao" alt="유진덕 카톡하기" title="유진덕 카톡하기">카카오톡 프로필</a>
+					</div>
+				</div>
+			</div>
+			<!-- 신부가족연락처 E -->
+		</div>
+		<!-- 연락처 모달 S -->
+		<!--지도 이미지 모달 S-->
+		<div class="modal-map-wrap">
+			<div>
+				<a
+					href="https://map.kakao.com/?urlX=529548.0000000003&amp;urlY=1120995.0000000035&amp;itemId=10124741&amp;q=KDW%EC%9B%A8%EB%94%A9&amp;srcid=10124741&amp;map_type=TYPE_MAP&amp;from=roughmap"
+					target="_blank"
+					><img class="map" src="http://t1.daumcdn.net/roughmap/imgmap/b7e1896403420ffcf76b207a3ceffded7d4f050718f6c70e6d312cfe5808759e" style="border: 1px solid #ccc"
+				/></a>
+			</div>
+		</div>
+		<!--지도 이미지 모달 E-->
+	</body>
 </html>

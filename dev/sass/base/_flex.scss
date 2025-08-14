@@ -34,9 +34,11 @@
 //gap
 @for $i from 1 through 10 {
 	.gap-#{$i} {
+		display: flex;
 		gap: ($i * 1px);
 	}
 	.gap-#{$i}0 {
+		display: flex;
 		gap: ($i * 10px);
 	}
 }

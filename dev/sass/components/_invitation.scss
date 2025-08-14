@@ -1,0 +1,101 @@
+@use "../abstracts/variables" as variables;
+@use "../abstracts/mixin" as mixin;
+.date-wrap {
+}
+.calendar {
+	margin: 2rem auto;
+	th,
+	td {
+		font-weight: 400;
+		width: 2.5rem;
+		height: 2.5rem;
+		&.sun {
+			color: variables.$color-red;
+		}
+		&.sat {
+			color: variables.$color-blue;
+		}
+		&.active {
+			position: relative;
+			color: #fff;
+			z-index: 0;
+			&:after {
+				@include mixin.afterIcon;
+				width: 100%;
+				height: 100%;
+				background: variables.$color-primary;
+				z-index: -1;
+				top: 0;
+				left: 0;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+.time-wrap {
+	& > div {
+		position: relative;
+		&:after {
+			@include mixin.afterIcon;
+			content: ":";
+			color: variables.$color-gray600;
+			bottom: 0.2rem;
+			right: -0.7rem;
+		}
+		&:last-child::after {
+			display: none;
+		}
+	}
+	.title {
+		font-size: 0.7rem;
+		color: variables.$color-gray500;
+	}
+	.count-num {
+		font-size: 1.2rem;
+	}
+}
+.root_daum_roughmap.map {
+	width: 100%;
+	margin-bottom: 20px;
+	.cont {
+		display: none;
+	}
+}
+.location-list {
+	text-align: left;
+	.title {
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+
+	.dot-list {
+		$listType: (
+			1: #a05eb5,
+			2: #0068b7,
+			3: #53b332,
+			4: #e60012,
+			5: #33cc99,
+			6: #3d5bab,
+		);
+		@each $type, $color in $listType {
+			.type-#{$type} {
+				&:after {
+					background: $color;
+				}
+			}
+		}
+		ul {
+			margin-top: 4px;
+			li {
+				padding-left: 0.8rem;
+				position: relative;
+				&:after {
+					content: "-";
+					position: absolute;
+					@include mixin.centerY;
+					left: 0;
+				}
+			}
+		}
+	}
+}
