@@ -1,0 +1,12 @@
+.gallery-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    gap: 10px;
+    .gallery-item {
+        width: 100%;
+        max-width: 10rem;
+    }
+}

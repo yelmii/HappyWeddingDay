@@ -33,21 +33,27 @@
 	}
 }
 .time-wrap {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+	
 	& > div {
 		position: relative;
+		//width: 2.5rem;
 		&:after {
 			@include mixin.afterIcon;
 			content: ":";
 			color: variables.$color-gray600;
 			bottom: 0.2rem;
-			right: -0.7rem;
+			right: -1.06rem;
 		}
 		&:last-child::after {
 			display: none;
 		}
 	}
 	.title {
-		font-size: 0.7rem;
+		font-size: 0.5rem;
+		letter-spacing: 1px;
 		color: variables.$color-gray500;
 	}
 	.count-num {
