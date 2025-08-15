@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as variables;
+.account-list {
+    & > li{
+        background: #fff;
+        border: 1px solid variables.$color-gray200;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+        a{
+                display: block;
+                width: 100%;
+                padding: 0.5rem;
+        }
+    }
+
+    //dep2
+    ul {
+        background: #fff;
+        padding: 1rem;
+        border-top: 1px solid variables.$color-gray200;
+        li {
+            margin-bottom: 0.3rem;
+            text-align: left;
+            font-size: 0.8rem;
+            &.comment{
+                margin-bottom: 0.6rem;
+
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                text-align: left;
+                border: 1px solid variables.$color-gray200;
+        border-radius: 4px;
+                input {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,2 +1,3 @@
 asset/images/gallery
 asset/images/*.zip
+node_modules

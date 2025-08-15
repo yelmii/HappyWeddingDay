@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "lightgallery": "^2.9.0-beta.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.32"
+  }
+}

@@ -5,25 +5,20 @@
 		width: 100%;
 	}
 	.main-title {
-		font-family: "TuesdayNight";
-		color: #fff;
 		position: absolute;
-		bottom: 7rem;
+		bottom: 6.5rem;
 		@include mixin.centerX;
-		font-size: 4rem;
-		font-weight: 400;
-		letter-spacing: 2px;
 		width: 100%;
 	}
 	.date {
-		width: 90%;
-		font-size: 1rem;
+		font-size: 0.8rem;
 		display: flex;
+        flex-direction: column;
 		justify-content: center;
 		position: absolute;
-		bottom: 4rem;
+		bottom: 2.5rem;
 		color: #fff;
-		gap: 0.5rem;
+		gap: 0.3rem;
 		@include mixin.centerX;
 	}
 }
