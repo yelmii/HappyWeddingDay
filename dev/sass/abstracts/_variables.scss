@@ -38,6 +38,7 @@ $color-gold: #ffc107;
 $color-modal-0: rgba(0, 0, 0, 0.1);
 $color-modal-1: rgba(0, 0, 0, 0.3);
 $color-modal-5: rgba(0, 0, 0, 0.5);
+$color-modal-7: rgba(0, 0, 0, 0.7);
 
 @function SetBtnHover($IsDark) {
 	@if $IsDark {
