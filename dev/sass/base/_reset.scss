@@ -6,14 +6,16 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+.scroll-none{
+	overflow: hidden;
+}
 body {
 	width: 100%;
 	color: variables.$font-color-static;
 	font-family: "GowunBatang";
 	font-weight: 400;
 	text-align: center;
-	font-size: 14px;
+	font-size: 15px;
 	//background: rgb(255, 253, 232);
 	background: variables.$color-main-bg;
 }
@@ -26,6 +28,9 @@ img {
 a {
 	text-decoration: none;
 	color: variables.$font-color-static;
+	&:link,&:active{
+		color: variables.$font-color-static;
+	}
 }
 i {
 	font-style: normal;

@@ -1,14 +1,23 @@
 @use "../abstracts/variables" as variables;
 .account-list {
-    & > li{
+    & > li {
         background: #fff;
         border: 1px solid variables.$color-gray200;
         border-radius: 4px;
-        margin-bottom: 1rem;
-        a{
-                display: block;
-                width: 100%;
-                padding: 0.5rem;
+        margin-bottom: .4rem;
+        a {
+            width: 100%;
+            padding: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            img {
+                width: 1.4rem;
+            }
+            &.on img {
+                transform: rotate(180deg);
+            }
         }
     }
 
@@ -21,17 +30,21 @@
             margin-bottom: 0.3rem;
             text-align: left;
             font-size: 0.8rem;
-            &.comment{
+            &.comment {
                 margin-bottom: 0.6rem;
-
             }
             &:last-child {
                 margin-bottom: 0;
             }
             a {
-                text-align: left;
                 border: 1px solid variables.$color-gray200;
-        border-radius: 4px;
+                border-radius: 4px;
+                padding: 0.5rem;
+
+                justify-content: space-between;
+                img {
+                    width: 1.1rem;
+                }
                 input {
                     display: none;
                 }
