@@ -223,23 +223,16 @@
 				<script type="text/javascript">
 					$(function () {
 						SetGalleryHtml();
-						$("#GalleryWrap")
-							.slick({
-								infinite: true,
-								slidesToShow: 1,
-								slidesToScroll: 1,
-								centerMode: true,
-								arrows: false,
-								fade: true,
-								asNavFor: "#SliderNav",
-								adaptiveHeight: true,
-								//variableWidth: true,
-							})
-							.on("afterChange", function (event, slick, direction) {
-								console.log("slick");
-								console.log(slick.currentSlide);
-								$("#ModalGalleryWrap").slick("slickGoTo", slick.currentSlide, true);
-							});
+						$("#GalleryWrap").slick({
+							infinite: true,
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							centerMode: true,
+							arrows: false,
+							fade: true,
+							asNavFor: "#SliderNav",
+							adaptiveHeight: true,
+						});
 						$("#SliderNav").slick({
 							infinite: true,
 							slidesToShow: 3,
@@ -249,15 +242,11 @@
 							asNavFor: "#GalleryWrap",
 							swipe: false,
 							focusOnSelect: true,
-							//variableWidth: true,
 						});
-
-						//$("#GalleryWrap .slider-item").height($("#GalleryWrap .slider-item").width());
 						$("#SliderNav .slider-item").height($("#SliderNav .slider-item").width());
 					});
 					$(window).on("resize", function () {
 						$("#GalleryWrap").slick("setPosition");
-						//$("#GalleryWrap .slider-item").height($("#GalleryWrap .slider-item").width());
 						$("#SliderNav .slider-item").height($("#SliderNav .slider-item").width());
 					});
 				</script>
@@ -436,23 +425,6 @@
 					<!-- 신부가족연락처 E -->
 				</div>
 			</div>
-		</div>
-		<div id="ImgModal" class="bg-modal" style="display: none">
-			<a href="#none" class="btn-close" onclick="FadeShow('ImgModal', false)"></a>
-			<div id="ModalGalleryWrap" class="slider-wrap"></div>
-			<script type="text/javascript">
-				$(function () {
-					$("#ModalGalleryWrap").slick({
-						infinite: true,
-						slidesToShow: 1,
-						slidesToScroll: 1,
-						centerMode: true,
-						arrows: false,
-						fade: true,
-						//variableWidth: true,
-					});
-				});
-			</script>
 		</div>
 		<!-- 연락처 모달 S -->
 	</body>

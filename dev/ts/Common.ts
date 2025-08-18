@@ -2,14 +2,12 @@ $(function () {
 	WeddingTimer();
 	setInterval(WeddingTimer, 1000);
 	var scrollTop = Number($(window).scrollTop());
-	console.log(scrollTop);
 	ShowSection(false, scrollTop);
 });
 var thisScrollTop = 0;
 $(window).on("scroll", function (e) {
 	var scrollTop = Number($(window).scrollTop());
 	var UpScroll = scrollTop > thisScrollTop ? false : true;
-	console.log(`${UpScroll ? "역방향" : "정방향"} / scrollTop: ${scrollTop}`);
 	ShowSection(UpScroll, scrollTop);
 	thisScrollTop = scrollTop;
 });
@@ -118,5 +116,4 @@ function SetGalleryHtml() {
 	}
 	$("#GalleryWrap").html(html);
 	$("#SliderNav").html(htmlNav);
-	$("#ModalGalleryWrap").html(htmlNav);
 }
