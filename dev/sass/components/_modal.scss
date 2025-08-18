@@ -1,76 +1,74 @@
 @use "../abstracts/variables" as variables;
 @use "../abstracts/mixin" as mixin;
 .modal-map-wrap {
-    width: 90%;
-    margin: auto;
-    color: #333;
-    position: relative;
-    a {
-        display: block;
-        img {
-            width: 100%;
-        }
-    }
-}
-.bg-modal {
-    background: variables.$color-modal-7;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-	z-index: 100;
-	
-	.btn-close{
-		@include mixin.closeBtn(48px, #fff);
-		right: 0;
-		top:0;
-		font-size: 0;
-		text-indent: -9999px;
+	width: 90%;
+	margin: auto;
+	color: #333;
+	position: relative;
+	a {
+		display: block;
+		img {
+			width: 100%;
+		}
 	}
 }
-.tel-modal-wrap{
+.bg-modal {
+	background: variables.$color-modal-7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+}
+.tel-modal-wrap {
 	position: fixed;
 	@include mixin.centerXY;
 	background: #fff;
 	width: 80%;
 	z-index: 101;
+	padding-top: 8px;
+	.btn-close {
+		@include mixin.closeBtn(20px, variables.$color-gray900);
+		right: 4px;
+		top: 4px;
+		font-size: 0;
+		text-indent: -9999px;
+	}
 }
-.tel-list{
+.tel-list {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
-	li{
+	li {
 		position: relative;
 
-		&:after{
+		&:after {
 			@include mixin.afterIcon;
 			@include mixin.centerY;
-			right: -0.5rem;
+			right: 0;
 			width: 1px;
-			height: 40%;
+			height: 20%;
 			background: variables.$color-gray300;
 		}
-		&:last-child:after{
+		&:last-child:after {
 			display: none;
 		}
 	}
 }
-.tel-title{
+.tel-title {
 	background: variables.$color-gray200;
-	font-size: .8rem;
-	padding: .8rem;
+	font-size: 0.8rem;
+	padding: 0.8rem;
 }
-.tel-sub-title{
-	font-size: .8rem;
+.tel-sub-title {
+	font-size: 0.8rem;
 	margin-bottom: 20px;
 	background: variables.$color-blue-bg;
 	display: inline-block;
 	padding: 4px 10px;
 	border-radius: 15px;
-	&.w{
+	&.w {
 		background: variables.$color-red-bg;
-		
-	}	
+	}
 }

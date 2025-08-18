@@ -35,7 +35,7 @@
 	display: flex;
 	gap: 30px;
 	justify-content: center;
-	
+
 	& > div {
 		position: relative;
 		//width: 2.5rem;
@@ -102,5 +102,20 @@
 				}
 			}
 		}
+	}
+}
+
+.mark {
+	position: relative;
+	&::before {
+		display: block;
+		position: absolute;
+		left: -0.8rem;
+		bottom: 2px;
+		content: "故";
+		font-size: 0.7rem;
+		color: variables.$color-gray600;
+		font-family: serif;
+		line-height: normal;
 	}
 }

@@ -1,3 +1,4 @@
+@use "../abstracts/variables" as variables;
 .wrap {
 	max-width: 699px;
 	width: 100vw;
@@ -6,4 +7,19 @@
 .section {
 	margin: 7rem 0;
 	padding: 0 1.5rem;
+	position: relative;
+	top: 60px;
+	opacity: 0;
+	transition: 0.8s;
+	&.on {
+		opacity: 1;
+		top: 0;
+	}
+}
+.outro {
+	padding: 5rem 0 3rem 0;
+	color: #fff;
+	font-style: italic;
+	background: linear-gradient(to top, rgba(variables.$color-main-bg, 0) 75%, rgba(variables.$color-main-bg, 0.5) 85%, rgba(variables.$color-main-bg, 0.9) 95%, rgba(variables.$color-main-bg, 1) 100%),
+		url("../../../asset/images/outro.png") no-repeat center -190px / cover;
 }

@@ -36,29 +36,29 @@
 		background: variables.$color-gray400;
 	}
 }
-.hidden{
+.hidden {
 	display: none !important;
 }
-.btn-small{
-	width: 24px;
-	height: 24px;
+.btn-small {
+	width: 48px;
+	height: 48px;
 	display: block;
 	font-size: 0;
 	text-indent: -9999px;
 	overflow: hidden;
 }
-.btn-tel{
+.btn-tel {
 	@extend .btn-small;
 	background: url("../../../asset/images/svg/phone-solid-full.svg") no-repeat center;
-	background-size: 14px;
+	background-size: 24px;
 }
-.btn-sms{
+.btn-sms {
 	@extend .btn-small;
 	background: url("../../../asset/images/svg/message-solid-full.svg") no-repeat center;
-	background-size: 14px;
+	background-size: 24px;
 }
-.btn-kakao{
+.btn-kakao {
 	@extend .btn-small;
 	background: url("../../../asset/images/svg/free-icon-kakao-talk-3669973.png") no-repeat center;
-	background-size: 14px;
+	background-size: 24px;
 }

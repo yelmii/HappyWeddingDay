@@ -1,18 +1,40 @@
+@use "../abstracts/mixin" as mixin;
 
-
-.gallery-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    justify-content: start;
-    gap: 10px;
-    .gallery-item {
-        width: 100%;
-        max-width: 10rem;
-    }
+.slider-wrap {
+	///width: 100%;
+	.slider-item {
+		overflow: hidden;
+		padding: 0 1rem;
+	}
+	&.nav {
+		.slider-item {
+			opacity: 0.5;
+			position: relative;
+			padding: 0;
+			img {
+				position: absolute;
+				@include mixin.centerXY;
+				margin: 0 0.5rem;
+			}
+		}
+		.slick-center {
+			opacity: 1;
+		}
+	}
 }
-.swiper{
-    width: 100%;
-    height: 400px;
+
+//slider nav
+.slick-wrap {
+	position: relative;
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		@include mixin.centerY;
+		display: block;
+		width: 20px;
+		height: 20px;
+		background: gray;
+		left: 0;
+	}
 }
