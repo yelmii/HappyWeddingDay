@@ -51,13 +51,17 @@ function SlideShow(index) {
 	$("#BtnAccountMore_" + index).toggleClass("on");
 }
 
-function FadeShow(...ids) {
-	var str = "";
-	for (var id of ids) {
-		$("#" + id).fadeToggle();
-		str == "" ? (str += id) : (str += "," + id);
+function FadeShow(ModalId, IsShow) {
+	if (IsShow) {
+		$("#" + ModalId).fadeIn();
+		$("body").addClass("scroll-none");
+	} else {
+		$("#" + ModalId).fadeOut();
+		$("body").removeClass("scroll-none");
 	}
-	$("body").toggleClass("scroll-none");
+}
+function ShowImg(id, IsShow) {
+	FadeShow("ImgModalWrap", IsShow);
 }
 
 function ShowSection(UpScroll, scrollTop) {
@@ -114,4 +118,5 @@ function SetGalleryHtml() {
 	}
 	$("#GalleryWrap").html(html);
 	$("#SliderNav").html(htmlNav);
+	$("#ModalGalleryWrap").html(htmlNav);
 }

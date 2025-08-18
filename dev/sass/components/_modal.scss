@@ -20,6 +20,15 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.slider-wrap {
+		width: 90%;
+		.slider-item {
+			padding: 0;
+		}
+	}
 }
 .tel-modal-wrap {
 	position: fixed;
@@ -36,6 +45,7 @@
 		text-indent: -9999px;
 	}
 }
+
 .tel-list {
 	display: flex;
 	align-items: center;

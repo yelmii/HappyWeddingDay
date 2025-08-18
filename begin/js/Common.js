@@ -46,18 +46,18 @@ function SlideShow(index) {
         .slideToggle();
     $("#BtnAccountMore_" + index).toggleClass("on");
 }
-function FadeShow() {
-    var ids = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        ids[_i] = arguments[_i];
+function FadeShow(ModalId, IsShow) {
+    if (IsShow) {
+        $("#" + ModalId).fadeIn();
+        $("body").addClass("scroll-none");
     }
-    var str = "";
-    for (var _a = 0, ids_1 = ids; _a < ids_1.length; _a++) {
-        var id = ids_1[_a];
-        $("#" + id).fadeToggle();
-        str == "" ? (str += id) : (str += "," + id);
+    else {
+        $("#" + ModalId).fadeOut();
+        $("body").removeClass("scroll-none");
     }
-    $("body").toggleClass("scroll-none");
+}
+function ShowImg(id, IsShow) {
+    FadeShow("ImgModalWrap", IsShow);
 }
 function ShowSection(UpScroll, scrollTop) {
     if (!UpScroll) {
@@ -110,4 +110,5 @@ function SetGalleryHtml() {
     }
     $("#GalleryWrap").html(html);
     $("#SliderNav").html(htmlNav);
+    $("#ModalGalleryWrap").html(htmlNav);
 }
