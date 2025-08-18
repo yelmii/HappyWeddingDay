@@ -4,12 +4,14 @@ $(function () {
     var scrollTop = Number($(window).scrollTop());
     console.log(scrollTop);
     ShowSection(false, scrollTop);
-    ShowSection(true, scrollTop);
 });
-$(window).on("mousewheel", function (e) {
-    var UpScroll = e.originalEvent.wheelDelta > 0;
+var thisScrollTop = 0;
+$(window).on("scroll", function (e) {
     var scrollTop = Number($(window).scrollTop());
+    var UpScroll = scrollTop > thisScrollTop ? false : true;
+    console.log((UpScroll ? "역방향" : "정방향") + " / scrollTop: " + scrollTop);
     ShowSection(UpScroll, scrollTop);
+    thisScrollTop = scrollTop;
 });
 function WeddingTimer() {
     var targetDate = new Date(2025, 11, 7, 11, 0, 0);
