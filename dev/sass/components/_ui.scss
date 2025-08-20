@@ -17,6 +17,10 @@
 	align-items: center;
 	justify-content: center;
 	gap: 4px;
+<<<<<<< HEAD
+=======
+	font-size: 1rem;
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 	img {
 		width: 1rem;
 	}
@@ -36,17 +40,27 @@
 		background: variables.$color-gray400;
 	}
 }
+<<<<<<< HEAD
 .hidden{
 	display: none !important;
 }
 .btn-small{
 	width: 24px;
 	height: 24px;
+=======
+.hidden {
+	display: none !important;
+}
+.btn-small {
+	width: 40px;
+	height: 40px;
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 	display: block;
 	font-size: 0;
 	text-indent: -9999px;
 	overflow: hidden;
 }
+<<<<<<< HEAD
 .btn-tel{
 	@extend .btn-small;
 	background: url("../../../asset/images/svg/phone-solid-full.svg") no-repeat center;
@@ -62,3 +76,20 @@
 	background: url("../../../asset/images/svg/free-icon-kakao-talk-3669973.png") no-repeat center;
 	background-size: 14px;
 }
+=======
+.btn-tel {
+	@extend .btn-small;
+	background: url("../../../asset/images/svg/phone-solid-full.svg") no-repeat center;
+	background-size: 20px;
+}
+.btn-sms {
+	@extend .btn-small;
+	background: url("../../../asset/images/svg/message-solid-full.svg") no-repeat center;
+	background-size: 20px;
+}
+.btn-kakao {
+	@extend .btn-small;
+	background: url("../../../asset/images/svg/free-icon-kakao-talk-3669973.png") no-repeat center;
+	background-size: 20px;
+}
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3

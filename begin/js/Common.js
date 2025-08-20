@@ -1,6 +1,18 @@
 $(function () {
     WeddingTimer();
     setInterval(WeddingTimer, 1000);
+<<<<<<< HEAD
+=======
+    var scrollTop = Number($(window).scrollTop());
+    ShowSection(false, scrollTop);
+});
+var thisScrollTop = 0;
+$(window).on("scroll", function (e) {
+    var scrollTop = Number($(window).scrollTop());
+    var UpScroll = scrollTop > thisScrollTop ? false : true;
+    ShowSection(UpScroll, scrollTop);
+    thisScrollTop = scrollTop;
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 });
 function WeddingTimer() {
     var targetDate = new Date(2025, 11, 7, 11, 0, 0);
@@ -35,6 +47,7 @@ function SlideShow(index) {
         .slideToggle();
     $("#BtnAccountMore_" + index).toggleClass("on");
 }
+<<<<<<< HEAD
 function FadeShow() {
     var ids = [];
     for (var _i = 0; _i < arguments.length; _i++) {
@@ -47,4 +60,70 @@ function FadeShow() {
         str == "" ? str += id : str += "," + id;
     }
     $("body").toggleClass("scroll-none");
+=======
+function FadeShow(ModalId, IsShow) {
+    if (IsShow) {
+        $("#" + ModalId).fadeIn();
+        $("body").addClass("scroll-none");
+    }
+    else {
+        $("#" + ModalId).fadeOut();
+        $("body").removeClass("scroll-none");
+    }
+}
+function ShowImg(id, IsShow) {
+    FadeShow("ImgModalWrap", IsShow);
+}
+function ShowSection(UpScroll, scrollTop) {
+    if (!UpScroll) {
+        //스크롤 아래로 내릴때 (정방향)
+        if (!UpScroll && scrollTop >= 200) {
+            $("#InvitationWrap").addClass("on");
+        }
+        else {
+            $("#InvitationWrap").removeClass("on");
+        }
+        if (scrollTop >= 1000) {
+            $("#DateWrap").addClass("on");
+        }
+        if (scrollTop >= 1500) {
+            $("#LocationWrap").addClass("on");
+        }
+        if (scrollTop >= 2500) {
+            $("#GalleryWrapSection").addClass("on");
+        }
+        if (scrollTop >= 3200) {
+            $("#AccountWrap").addClass("on");
+        }
+    }
+    else {
+        //스크롤 위로 올릴때 (역방향)
+        if (scrollTop < 200) {
+            $("#InvitationWrap").removeClass("on");
+        }
+        if (scrollTop < 1000) {
+            $("#DateWrap").removeClass("on");
+        }
+        if (scrollTop < 1500) {
+            $("#LocationWrap").removeClass("on");
+        }
+        if (scrollTop < 2500) {
+            $("#GalleryWrapSection").removeClass("on");
+        }
+        if (scrollTop < 3200) {
+            $("#AccountWrap").removeClass("on");
+        }
+    }
+}
+function SetGalleryHtml() {
+    var html = "";
+    var htmlNav = "";
+    for (var i = 1; i <= 38; i++) {
+        var index = i <= 9 ? "0" + i : i;
+        html += "<div class=\"slider-item\" onclick=\"ShowImg(" + i + ")\">\n\t\t\t\t\t\t<img src=\"/asset/images/gallery/0" + index + ".jpg\" id=\"Img_" + i + "\" alt=\"\uC6E8\uB529\uC2A4\uB0C5 \uC774\uBBF8\uC9C0 " + i + "\" />\n\t\t\t\t\t</div>";
+        htmlNav += "<div class=\"slider-item\">\n\t\t\t\t\t\t<img src=\"/asset/images/gallery/0" + index + ".jpg\" alt=\"\uC6E8\uB529\uC2A4\uB0C5 \uC774\uBBF8\uC9C0 " + i + "\" />\n\t\t\t\t\t</div>";
+    }
+    $("#GalleryWrap").html(html);
+    $("#SliderNav").html(htmlNav);
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 }

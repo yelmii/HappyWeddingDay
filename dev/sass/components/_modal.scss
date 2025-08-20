@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as variables;
 @use "../abstracts/mixin" as mixin;
 .modal-map-wrap {
+<<<<<<< HEAD
     width: 90%;
     margin: auto;
     color: #333;
@@ -30,11 +31,38 @@
 	}
 }
 .tel-modal-wrap{
+=======
+	width: 90%;
+	margin: auto;
+	color: #333;
+	position: relative;
+	a {
+		display: block;
+		img {
+			width: 100%;
+		}
+	}
+}
+.bg-modal {
+	background: variables.$color-modal-7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.tel-modal-wrap {
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 	position: fixed;
 	@include mixin.centerXY;
 	background: #fff;
 	width: 80%;
 	z-index: 101;
+<<<<<<< HEAD
 }
 .tel-list{
 	display: flex;
@@ -53,10 +81,39 @@
 			background: variables.$color-gray300;
 		}
 		&:last-child:after{
+=======
+	padding-top: 8px;
+	.btn-close {
+		@include mixin.closeBtn(20px, variables.$color-gray900);
+		right: 4px;
+		top: 4px;
+		font-size: 0;
+		text-indent: -9999px;
+	}
+}
+
+.tel-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	li {
+		position: relative;
+
+		&:after {
+			@include mixin.afterIcon;
+			@include mixin.centerY;
+			right: 0;
+			width: 1px;
+			height: 20%;
+			background: variables.$color-gray300;
+		}
+		&:last-child:after {
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 			display: none;
 		}
 	}
 }
+<<<<<<< HEAD
 .tel-title{
 	background: variables.$color-gray200;
 	font-size: .8rem;
@@ -64,13 +121,29 @@
 }
 .tel-sub-title{
 	font-size: .8rem;
+=======
+.tel-title {
+	background: variables.$color-gray200;
+	font-size: 0.8rem;
+	padding: 0.8rem;
+}
+.tel-sub-title {
+	font-size: 0.8rem;
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 	margin-bottom: 20px;
 	background: variables.$color-blue-bg;
 	display: inline-block;
 	padding: 4px 10px;
 	border-radius: 15px;
+<<<<<<< HEAD
 	&.w{
 		background: variables.$color-red-bg;
 		
 	}	
 }
+=======
+	&.w {
+		background: variables.$color-red-bg;
+	}
+}
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3

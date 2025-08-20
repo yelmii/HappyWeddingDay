@@ -6,7 +6,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+<<<<<<< HEAD
 .scroll-none{
+=======
+.scroll-none {
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 	overflow: hidden;
 }
 body {
@@ -28,6 +32,7 @@ img {
 a {
 	text-decoration: none;
 	color: variables.$font-color-static;
+<<<<<<< HEAD
 	&:link,&:active{
 		color: variables.$font-color-static;
 	}
@@ -35,6 +40,17 @@ a {
 i {
 	font-style: normal;
 }
+=======
+	&:link,
+	&:active {
+		color: variables.$font-color-static;
+	}
+}
+
+i {
+	font-style: normal;
+}
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 ul,
 li,
 ol {
@@ -57,4 +73,5 @@ h6 {
 
 button {
 	font-family: "GowunBatang";
+	color: variables.$font-color-static;
 }

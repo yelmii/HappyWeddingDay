@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 asset/images/gallery
 asset/images/*.zip
 node_modules
+=======
+asset/images/*.zip
+node_modules
+.DS_Store
+>>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
