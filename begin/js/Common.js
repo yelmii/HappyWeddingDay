@@ -1,8 +1,6 @@
 $(function () {
     WeddingTimer();
     setInterval(WeddingTimer, 1000);
-<<<<<<< HEAD
-=======
     var scrollTop = Number($(window).scrollTop());
     ShowSection(false, scrollTop);
 });
@@ -12,7 +10,6 @@ $(window).on("scroll", function (e) {
     var UpScroll = scrollTop > thisScrollTop ? false : true;
     ShowSection(UpScroll, scrollTop);
     thisScrollTop = scrollTop;
->>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 });
 function WeddingTimer() {
     var targetDate = new Date(2025, 11, 7, 11, 0, 0);
@@ -47,20 +44,6 @@ function SlideShow(index) {
         .slideToggle();
     $("#BtnAccountMore_" + index).toggleClass("on");
 }
-<<<<<<< HEAD
-function FadeShow() {
-    var ids = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        ids[_i] = arguments[_i];
-    }
-    var str = "";
-    for (var _a = 0, ids_1 = ids; _a < ids_1.length; _a++) {
-        var id = ids_1[_a];
-        $("#" + id).fadeToggle();
-        str == "" ? str += id : str += "," + id;
-    }
-    $("body").toggleClass("scroll-none");
-=======
 function FadeShow(ModalId, IsShow) {
     if (IsShow) {
         $("#" + ModalId).fadeIn();
@@ -125,5 +108,4 @@ function SetGalleryHtml() {
     }
     $("#GalleryWrap").html(html);
     $("#SliderNav").html(htmlNav);
->>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 }
