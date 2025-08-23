@@ -7,8 +7,6 @@
 .section {
 	margin: 7rem 0;
 	padding: 0 1.5rem;
-<<<<<<< HEAD
-=======
 	position: relative;
 	top: 60px;
 	opacity: 0;
@@ -24,5 +22,4 @@
 	font-style: italic;
 	background: linear-gradient(to top, rgba(variables.$color-main-bg, 0) 75%, rgba(variables.$color-main-bg, 0.5) 85%, rgba(variables.$color-main-bg, 0.9) 95%, rgba(variables.$color-main-bg, 1) 100%),
 		url("../../../asset/images/outro.png") no-repeat center -190px / cover;
->>>>>>> d584a9cc131c5bac5d8dbab932e7cb016c7715e3
 }
