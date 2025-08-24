@@ -3,8 +3,22 @@ $(function () {
     setInterval(WeddingTimer, 1000);
     var scrollTop = Number($(window).scrollTop());
     ShowSection(false, scrollTop);
-    SetAudioBtn();
 });
+
+document.addEventListener("DOMContentLoaded", async function () {
+	$("[id^='BtnAudio']").hide();
+    try {
+		var audio = document.querySelector("#Bgm");
+		// play()는 Promise를 반환 (정책상 막히면 reject됨)
+        await audio.play();
+		$("#BtnAudioPause").show();
+		
+    } catch (err) {
+		// 자동재생 막힘 → 재생 버튼 UI 유지
+        $("#BtnAudioPlay").show();
+    }
+});
+
 var thisScrollTop = 0;
 $(window).on("scroll", function (e) {
     var scrollTop = Number($(window).scrollTop());
@@ -118,6 +132,7 @@ function SetGalleryHtml() {
     $("#GalleryWrap").html(html);
     $("#SliderNav").html(htmlNav);
 }
+
 function AudioControl(play) {
     var audio = document.querySelector("#Bgm");
     $("[id^='BtnAudio']").hide();
@@ -127,15 +142,5 @@ function AudioControl(play) {
     } else {
         audio.pause();
         $("#BtnAudioPlay").show();
-    }
-}
-function SetAudioBtn() {
-    $("[id^='BtnAudio']").hide();
-    var audio = document.querySelector("#Bgm");
-    console.log("audio.paused : " + audio.paused);
-    if (audio.paused) {
-        $("#BtnAudioPlay").show();
-    } else {
-        $("#BtnAudioPause").show();
     }
 }
