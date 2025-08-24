@@ -3,6 +3,7 @@ $(function () {
     setInterval(WeddingTimer, 1000);
     var scrollTop = Number($(window).scrollTop());
     ShowSection(false, scrollTop);
+    SetAudioBtn();
 });
 var thisScrollTop = 0;
 $(window).on("scroll", function (e) {
@@ -108,4 +109,27 @@ function SetGalleryHtml() {
     }
     $("#GalleryWrap").html(html);
     $("#SliderNav").html(htmlNav);
+}
+function AudioControl(play) {
+    var audio = document.querySelector("#Bgm");
+    $("[id^='BtnAudio']").hide();
+    if (play) {
+        audio.play();
+        $("#BtnAudioPause").show();
+    }
+    else {
+        audio.pause();
+        $("#BtnAudioPlay").show();
+    }
+}
+function SetAudioBtn() {
+    $("[id^='BtnAudio']").hide();
+    var audio = document.querySelector("#Bgm");
+    console.log("audio.paused : " + audio.paused);
+    if (audio.paused) {
+        $("#BtnAudioPlay").show();
+    }
+    else {
+        $("#BtnAudioPause").show();
+    }
 }

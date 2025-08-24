@@ -79,3 +79,27 @@
 	background: url("../../../asset/images/svg/kakao-talk-brands-solid-full.svg") no-repeat center;
 	background-size: 1.1rem;
 }
+
+.btn-audio-control-play{
+	display: none;
+	position: fixed;
+	top: 1rem;
+	right: 1.5rem;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 0;
+	z-index: 101;
+	transition: .2s;
+	background: url("../../../asset/images/svg/volume-xmark-solid-full.svg") rgba(#fff, .8) no-repeat center center/24px;
+	&:hover{
+		background-color: #fff;
+	}
+}
+
+.btn-audio-control-pause{
+	display: block;
+	@extend .btn-audio-control-play;
+	background: url("../../../asset/images/svg/volume-high-solid-full.svg") rgba(#fff, .8) no-repeat center center/23px;
+}
+
