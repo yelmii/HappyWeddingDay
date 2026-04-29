@@ -76,7 +76,7 @@ $(window).on("scroll", function (e) {
     thisScrollTop = scrollTop;
 });
 function WeddingTimer() {
-    var targetDate = new Date(2025, 11, 7, 11, 0, 0);
+    var targetDate = new Date(2036, 11, 7, 11, 0, 0);
     var nowDate = new Date();
     var diff = Number(targetDate) - Number(nowDate);
     var day = Math.floor(diff / (1000 * 60 * 60 * 24));
